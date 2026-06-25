@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automated Web Platform - Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">Auto<span>Dash</span></div>
+            <ul class="menu">
+                <li class="active"><a href="#">Overview</a></li>
+                <li><a href="#">Analytics</a></li>
+                <li><a href="#">Automation</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="dash-header">
+                <h1>System Overview</h1>
+                <div class="status-badge">System: Active</div>
+            </header>
+
+            <!-- Stats Grid -->
+            <section class="stats-grid">
+                <div class="stat-card">
+                    <h3>Total Requests</h3>
+                    <p class="stat-number">1,254</p>
+                    <span class="stat-trend">+12% this week</span>
+                </div>
+                <div class="stat-card">
+                    <h3>Automation Efficiency</h3>
+                    <p class="stat-number">98.4%</p>
+                    <span class="stat-trend stable">Optimal</span>
+                </div>
+                <div class="stat-card">
+                    <h3>Tasks Processed</h3>
+                    <p class="stat-number">43,210</p>
+                    <span class="stat-trend">+5.4%</span>
+                </div>
+            </section>
+
+            <!-- Data Table Section -->
+            <section class="table-section">
+                <h2>Recent Automation Logs</h2>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Task ID</th>
+                                <th>Process Name</th>
+                                <th>Status</th>
+                                <th>Execution Time</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>#9021</td>
+                                <td>Database Backup Automation</td>
+                                <td><span class="badge success">Success</span></td>
+                                <td>1.2s</td>
+                            </tr>
+                            <tr>
+                                <td>#9022</td>
+                                <td>API Sync Sync Engine</td>
+                                <td><span class="badge success">Success</span></td>
+                                <td>0.4s</td>
+                            </tr>
+                            <tr>
+                                <td>#9023</td>
+                                <td>Image Processing Pipeline</td>
+                                <td><span class="badge pending">Running</span></td>
+                                <td>--</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

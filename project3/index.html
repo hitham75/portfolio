@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic UI Customization Lab</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="custom-container">
+        <!-- Control Panel Form -->
+        <div class="panel card">
+            <h2>UI Control Center</h2>
+            <form id="customizerForm">
+                <div class="control-group">
+                    <label for="boxText">Card Text Content</label>
+                    <input type="text" id="boxText" value="Live Preview Card" maxlength="30">
+                </div>
+                
+                <div class="control-group">
+                    <label for="boxRadius">Border Radius (px)</label>
+                    <input type="number" id="boxRadius" min="0" max="50" value="12">
+                </div>
+
+                <div class="control-group">
+                    <label for="themeColor">Accent Color</label>
+                    <select id="themeColor">
+                        <option value="#a855f7">Neon Purple</option>
+                        <option value="#3b82f6">Electric Blue</option>
+                        <option value="#10b981">Emerald Green</option>
+                        <option value="#ef4444">Vibrant Red</option>
+                    </select>
+                </div>
+            </form>
+        </div>
+
+        <!-- Real-time Preview Area -->
+        <div class="preview-zone card">
+            <h2>Live Canvas</h2>
+            <div id="previewCard" class="dynamic-target">
+                <p id="targetText">Live Preview Card</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
